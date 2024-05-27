@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,s=0;
+    scanf("%d%d",&a,&b);
+    int x[a][b],i,j;
+    for(i=0;i<a;i++)
+    {
+        int c=0;
+        for(j=0;j<b;j++)
+        {
+            scanf("%d",&x[i][j]);
+            c=i+j;
+            if(c!=2&&i!=j)
+            {
+             s=s+x[i][j];
+            }
+        }
+    }
+    printf("%d",s);
+}

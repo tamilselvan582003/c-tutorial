@@ -1,0 +1,14 @@
+#include<stdio.h>
+int simple_interst()
+{
+    int p,r,t;
+    scanf("%d %d %d",&p,&r,&t);//p=principal,r=rate,t=time
+    int sum;
+    sum=(p*r*t)/100;
+    printf("%d",sum);
+}
+
+int main()
+{
+   simple_interst();
+}

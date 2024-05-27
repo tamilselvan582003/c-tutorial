@@ -1,0 +1,12 @@
+// Interview question
+#include <stdio.h>
+
+int main() {
+    int x=(1,2,3,5);
+    int y;
+    printf("%d",printf("Tamil"));
+    printf("\n%d",x);
+    printf("\n%d",scanf("%d",&y));
+
+    return 0;
+}

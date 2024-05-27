@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+float a,b,c,d,e,f;
+printf(" Enter a two value \n");
+scanf("%f %f",&a,&b);
+c=a+b;
+d=a-b;
+e=a*b;
+f=a/b;
+printf("\n the sum is:%f",c);
+printf("\n the sub id:%f",d);
+printf("\n the mul is:%f",e);
+printf("\n the div is:%f",f);
+getch();
+}

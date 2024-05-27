@@ -1,0 +1,52 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int x[a],i,s=0,c=0,e=0,r=0;
+    for(i=0;i<a;i++)
+    {
+        scanf("%d",&x[i]);
+    }
+    for(i=0;i<a;i++)
+    {
+        if(x[i]%2==0)
+        {
+            printf("%d ",x[i]);
+            s=s+x[i];
+        }
+    }
+    printf("\nEven=%d",s);
+    printf("\n");
+    for(i=0;i<a;i++)
+    {
+     if(x[i]%2!=0)
+        {
+            printf("%d ",x[i]);
+            c=c+x[i];
+        }
+    }
+   
+    printf("\nOdd=%d",c);
+    printf("\n");
+    for(i=0;i<a;i++)
+    {
+        if(i%2!=0)
+        {
+            printf("%d ",x[i]);
+            e=e+x[i];
+        }
+    }
+    printf("\n%d",e);
+    printf("\n");
+    for(i=0;i<a;i++)
+    {
+        if(i%2==0)
+        {
+            printf("%d ",x[i]);
+            r=r+x[i];
+        }
+    }
+    printf("\n%d",r);
+    
+}

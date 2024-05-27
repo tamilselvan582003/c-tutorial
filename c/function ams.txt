@@ -1,0 +1,41 @@
+#include<stdio.h>
+int power(int p ,int n)
+{
+  int r=1;
+  while(n>0)
+  {
+    r*=p;
+    n--;
+    }
+return r;
+}
+  
+int ams(int a)
+{
+  int b=a,c=0;
+  while(b>0)
+  {
+   b=b/10;
+   c++;
+   }
+   int i,s=0;
+   b=a;
+   while(b>0)
+   {
+    i=b%10;
+    s=s+power(i,c);
+    b/=10;
+    }
+   return s;
+}
+int main()
+{
+ int a,b;
+ scanf("%d",&a);
+ b=ams(a);
+ if(a==b)
+   printf("ams");
+ else
+   printf("not ams");
+}
+ 

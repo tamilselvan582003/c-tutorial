@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+flot r,a;
+printf("enter a value \n");
+scanf("%f",&r);
+a=3.14*r*r;
+printf("\n the area is :%f",a);
+getch()
+}

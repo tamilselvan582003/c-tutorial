@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+clrscr();
+int a,b,c;
+printf("enter a value :\n");
+scanf("%d",&a);
+b=a*a;
+c=b*a;
+printf("\n square is :%d",b);
+printf("\n cube is : %d",c);
+getch();
+}

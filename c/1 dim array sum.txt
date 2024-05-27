@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int x[a],y[a],z[a],i;
+    for(i=0;i<a;i++)
+     {
+         printf("Enter a value x[%d]=",i);
+         scanf("%d",&x[i]);
+     }
+    for(i=0;i<a;i++)
+     {
+         printf("Enter a value y[%d]=",i);
+         scanf("%d",&y[i]);
+     }
+     for(i=0;i<a;i++)
+     {
+         z[i]=x[i]+y[i];
+         printf("The value of z[%d]=%d\n",i,z[i]);
+     }
+}

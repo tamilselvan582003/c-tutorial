@@ -1,0 +1,26 @@
+#include<stdio.h>
+int power(int a,int b)
+{
+    int i,c=1;
+    while(b>0)
+    {
+          c*=a;
+          b--;
+    }
+    return c;
+}
+int compound_interst()
+{
+    int p,r,t;
+    scanf("%d %d %d",&p,&r,&t);//p=principal,r=rate,t=time
+    int sum,n,e;
+    e=r+1;
+    n=power(e,t);
+    sum=(p*n)-p;
+    printf("%d",sum);
+}
+
+int main()
+{
+   compound_interst();
+}
